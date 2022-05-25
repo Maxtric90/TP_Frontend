@@ -1,0 +1,354 @@
+body{
+    margin:0px;
+    font-family: Noto Sans,Arial,Helvetica,sans-serif;
+    color: #313380;
+    height: 2000px;
+}
+
+header{
+    width: 100%;
+}
+
+.navbar{
+    align-items: center;
+    display: flex;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    box-shadow: 0px 4px 4px rgb(0,0,0,15%);
+}
+
+header .navbar{
+    background-color: white;
+}
+
+header .navbar .container{
+    width:100%;
+    align-items: center;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    padding-left: 3rem;
+}
+
+.logo{
+    width:20%;
+}
+.linksbar{
+    width:50%;
+}
+
+header .navbar .logo img{
+    width: 12rem;
+    vertical-align: middle;
+}
+
+header .navbar .linksbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    overflow: hidden;
+}
+
+.linksbar-links{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header .navbar .linksbar li {
+    float: left;
+  }
+  
+header .navbar .linksbar li a {
+    display: block;
+    text-align: center;
+    color:#313380;
+    padding: 16px;
+    text-decoration: none;
+ }
+
+header .navbar .linksbar li a:hover{
+     color:#916FF4;
+     font-weight: bold;
+}
+
+main{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+}
+
+#hamburger-menu {
+    visibility: hidden;
+    position: fixed;
+}
+
+@media screen and (max-width: 760px) {
+    header .navbar .container{
+        flex-direction: column;
+    }
+
+    .logo{
+        width:100%;
+    }
+
+    .linksbar{
+        width:100%;
+    }
+
+    header .navbar .linksbar li a {
+        padding: 5px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header .navbar .container{
+        padding-left: 0.2rem;
+    }
+
+    header .navbar .linksbar ul {
+        padding: 0 0 0 0.2rem;
+        min-width: 350;
+    }
+
+    .linksbar-links {
+        width:22rem;
+    }
+
+    #hamburger-menu {
+        position: relative;
+        visibility: visible;
+        width: 30px;
+        height: 30px;
+        display: block;
+        border: none;
+        padding: 0px;
+        margin-left: 20px;
+        margin-top: 25px;
+        background: linear-gradient(
+          to bottom, 
+          #3D0E61, #3D0E61 20%, 
+          white 20%, white 40%, 
+          #3D0E61 40%, #3D0E61 60%, 
+          white 60%, white 80%, 
+          #3D0E61 80%, #3D0E61 100%
+        );
+        z-index: 4;
+    }
+
+    header .navbar .container{
+        flex-wrap:wrap;
+    }
+
+    main .nav-secondary{
+        visibility: visible;
+        position: absolute;
+        width:20%;
+        height:100%;
+        background-color: #f1f1f1;
+        padding-top: 3rem;
+    }
+
+    main .principal{    
+        width:80%;
+        margin-top: 0.2rem;
+    }
+
+    main{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+} 
+
+main .nav-secondary{
+    width:20%;
+    min-width: 12rem;
+    margin-top: 1rem;
+}
+
+main .nav-secondary ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    min-width: 8rem;
+    background-color: #f1f1f1;
+}
+  
+main .nav-secondary li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+  
+main .nav-secondary li a:hover {
+    background-color: #555;
+    color: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0.05s;
+}
+
+main .principal{
+    width:60%;
+    margin-top: 0rem;
+    min-width: 35rem;
+}
+
+#containerNomina{
+    width: 100%;
+    border: 0px solid #313380;
+    padding: 1px 1px 1px 1px;
+    min-width: 35rem;
+}
+
+.filaNomina{
+    display: flex;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.headerNomina{
+    background-color:darkslategrey;
+    color:#f1f1f1;
+    font-weight: 600;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.contenidoNomina{
+    background-color: lightgray;
+    color: black;
+    font-weight: 200;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px 0px 0px 0px;
+}
+
+.filaAgregar{
+    color: black;
+    font-weight: 200;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    text-align: center;
+    border: 1px solid white;
+    padding: 0px 0px 0px 0px;
+}
+
+.filaAgregar input{
+    background-color: #F1ECFE;
+    width:100%;
+    height:100%;
+    border:0px;
+    padding:0;
+    border-bottom: 1px solid slategray;
+    font-size: inherit;
+}
+
+
+.filaAgregar select{
+    background-color: #F1ECFE;
+    width:100%;
+    height:100%;
+    border:0px;
+    padding:0;
+    border-bottom: 1px solid slategray;
+    font-size: inherit;
+    text-align: center;
+}
+
+.filaAgregar a{
+    color: black;
+    font-size: 14px;
+}
+
+.filaAgregar a:hover{
+    color: green;
+    font-size: 14px;
+}
+
+.nominaOrdinal{
+    width: 5%;
+}
+
+.nominaNombre{
+    width: 35%;
+    text-align:left;
+}
+
+.nominaSexo{
+    width: 15%;
+}
+
+.nominaDNI{
+    width: 15%;
+}
+
+.nominaFechaNacimiento{
+    width: 15%;
+}
+
+.nominaEstado{
+    width: 10%;
+}
+
+.nominaAccion{
+    width: 5%;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.textoExplicativo {
+    font-family: 'Roboto', sans-serif;
+}
+
+#containerCards{
+    width:100%;
+    align-items: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    column-gap: 1rem;
+    row-gap: 0.7rem;
+    padding-left: 0rem;
+    border:0px solid black;
+}
+
+.cardPersona{
+    border:1px solid rgb(156, 156, 156);
+    width: 8rem;
+    text-align: center;
+}
+
+.cardPersonaImagen{
+    width: 70%;
+    border: 0px solid rgb(0,0,0,15%);
+    display: inline-block;
+}
+
+.cardPersonaTexto{
+    text-align: left;
+    font-size: 11px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 3px;
+    height: 6rem;
+}
+
+#formularioConsulta{
+    line-height: 26px;
+}
+
+#formularioConsulta form {
+    font-size: 14px;
+}

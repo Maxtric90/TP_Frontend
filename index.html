@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma APG - Life</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <!-- Fuentes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Iconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/ca34965569.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="imgs/logo.png"></a>
+                </div>
+                <div class="linksbar">
+                    <ul class="linksbar-links">
+                        <li class="linksbar-items">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="linksbar-items">
+                            <a href="emisiones.html">Mis emisiones</a>
+                        </li>
+                        <li class="linksbar-items">
+                            <a href="polizas.html">Mis pólizas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <button id="hamburger-menu" onclick="toggleMenu()"></button>
+        <nav id="barraSecundaria" class="nav-secondary">
+            <ul>
+                <li><a href="#" onclick="displayVisualizarNomina()"><i class="fa-solid fa-person"></i>Visualizar Nómina</a></li>
+                <li><a href="#" onclick="displayModificarNomina()"><i class="fa-solid fa-circle-user"></i>Modificar Nómina</a></li>
+                <li><a href="#" onclick="displayConsultas()"><i class="fa-solid fa-print"></i>Realizar consultas</a></li>
+            </ul>
+        </nav>
+        <section class="principal" id="seccionPrincipal">
+
+                <!-- Información incluida desde JS-->    
+
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
