@@ -2,7 +2,6 @@ body{
     margin:0px;
     font-family: Noto Sans,Arial,Helvetica,sans-serif;
     color: #313380;
-    height: 2000px;
 }
 
 header{
@@ -351,4 +350,13 @@ i {
 
 #formularioConsulta form {
     font-size: 14px;
+}
+
+footer {
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    font-size: 12px;
+    background-color: rgb(210, 210, 210);
 }
