@@ -10,8 +10,8 @@ class Vida{
 
 const nomina=[];
 
-nomina.push(new Vida("Maximiliano Ortiz", "Masculino", 34567890, "02/07/1990", "Stock"));
-nomina.push(new Vida("Matias Ortiz", "Masculino", 43456789, "02/07/1990", "Stock"));
+nomina.push(new Vida("Maximiliano Ortiz", "Masculino", 34567890, "1990-02-07", "Stock"));
+nomina.push(new Vida("Matias Ortiz", "Masculino", 43456789, "1988-25-07", "Stock"));
 
 displayVisualizarNomina();
 
